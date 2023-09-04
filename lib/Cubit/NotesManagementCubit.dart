@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_cubit/Database/NoteDatabase.dart';
+import 'package:notes_cubit/State classes/NoteDatabase.dart';
 import 'package:notes_cubit/model/NoteModel.dart';
 
 class NotesManagementCubit extends Cubit<CollectionOfNotes> {

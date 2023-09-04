@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_cubit/Cubit/NotesManagementCubit.dart';
 import 'package:notes_cubit/Cubit/Theme%20Manager%20Cubit.dart';
-import 'package:notes_cubit/Database/NoteDatabase.dart';
+import 'package:notes_cubit/State classes/NoteDatabase.dart';
 import 'package:notes_cubit/utils/Create%20Note%20Dialog.dart';
 import 'package:notes_cubit/utils/Update%20Note%20Dialog.dart';
 import 'package:notes_cubit/utils/textstyle.dart';
