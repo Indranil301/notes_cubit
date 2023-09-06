@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_cubit/Cubit/NotesManagementCubit.dart';
 import 'package:notes_cubit/Cubit/Theme%20Manager%20Cubit.dart';
+import 'package:notes_cubit/Database/App%20Database.dart';
 import 'package:notes_cubit/screens/Homepage.dart';
 import 'package:notes_cubit/utils/Themes.dart';
 
@@ -15,7 +16,7 @@ void main() {
     ),
     //Cubit class for Notes Management
     BlocProvider<NotesManagementCubit>(
-      create: (context) => NotesManagementCubit(),
+      create: (context) => NotesManagementCubit(myDB: AppDatabase.db),
     )
   ], child: MyApp()));
 }

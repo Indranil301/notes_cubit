@@ -22,6 +22,8 @@ class _HomepageState extends State<Homepage> {
     // TODO: implement initState
     super.initState();
     isDark = false;
+
+    BlocProvider.of<NotesManagementCubit>(context).initializeAllNotes();
   }
 
   @override
