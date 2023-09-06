@@ -4,7 +4,7 @@ import 'package:notes_cubit/model/NoteModel.dart';
 
 class NotesManagementCubit extends Cubit<CollectionOfNotes> {
   //initial state
-  NotesManagementCubit() : super(CollectionOfNotes(array: []));
+  NotesManagementCubit() : super(CollectionOfNotes(array: array));
 
   //Method to add data
   void addData({required Note data}) {

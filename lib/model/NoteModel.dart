@@ -1,6 +1,16 @@
-class Note {
+import 'package:hive/hive.dart';
+
+//Remeber use the dart file name to generate type adaptor
+part 'NoteModel.g.dart';
+
+@HiveType(typeId: 0)
+class Note extends HiveObject {
+  @HiveField(0)
   String name;
+
+  @HiveField(1)
   String description;
+
   Note({required this.name, required this.description});
 }
 
